@@ -9,9 +9,11 @@ int main()
     // Initialize random number generator
     srand(time(0));
     number = rand() % 100 + 1; // Random number between 1 and 100
-
-    printf("Welcome to the Guessing Game!\n");
-    printf("I have selected a number between 1 and 100.\n");
+    printf("Enter your name: \n");
+    char* name[1024];
+    scanf(&name);
+    printf("Welcome to the Guessing Game, %s!\n", name);
+    printf("I have selected a k j number between 1 and 100.\n");
 
     // Loop until the user guesses the number
     do
